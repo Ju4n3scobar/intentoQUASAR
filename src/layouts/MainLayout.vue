@@ -7,13 +7,19 @@
           dense
           round
           icon="menu"
+          size="10px"
           aria-label="Menu"
           @click="toggleLeftDrawer"
         />
-
+        
         <q-toolbar-title>
           Parcefone: Sistema de inventario
+          <q-icon 
+            name="fab fa-pied-piper-square"
+            size="35px"
+          />
         </q-toolbar-title>
+        
 
         <div>COMODISIMOS</div>
       </q-toolbar>
@@ -54,7 +60,19 @@ const linksList = [
   {
     title: 'Registrar equipo',
     caption: 'Monitores, PCs, portatiles, etc.',
-    icon: 'save',
+    icon: "far fa-save",
+    link: 'http://localhost:9090/#/registrar'
+  },
+  {
+    title: 'Realizar una accion',
+    caption: 'Actualizar caracteristicas, dar de baja, etc.',
+    icon: "fas fa-magic",
+    link: 'http://localhost:9090/#/registrar'
+  },
+  {
+    title: 'Manual de usuario',
+    caption: 'Manual con las instrucciones del software',
+    icon: "fas fa-book-reader",
     link: 'http://localhost:9090/#/registrar'
   },
 ];
